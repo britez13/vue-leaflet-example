@@ -35,7 +35,7 @@ function loadMap() {
       "OpenStreetMap Contributors </a> Tiles \u00a9 HOT",
   }).addTo(map);
 
-  fetch("/src/data/cajeros.geojson")
+  fetch("/cajeros.geojson")
     .then(function (response) {
       return response.json();
     })
